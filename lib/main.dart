@@ -67,15 +67,18 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ],
           ),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Text(
-              'phoneNo',
+          Align(
+            alignment: Alignment.topLeft,
+            child: Padding(
+              padding: const EdgeInsets.fromLTRB(24, 24, 0, 8),
+              child: Text(
+                'Phone Number',
+              ),
             ),
           ),
           Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: TextField(
+            padding: const EdgeInsets.all(24.0),
+            child: TextFormField(
               decoration: InputDecoration(
                   hintText: '+1 245 42 29 234',
                   fillColor: Colors.grey,
@@ -83,7 +86,16 @@ class _MyHomePageState extends State<MyHomePage> {
                       borderRadius: BorderRadius.all(Radius.circular(20)))),
             ),
           ),
-          ElevatedButton(onPressed: () {}, child: Text('Login'))
+          Padding(
+            padding: const EdgeInsets.all(24.0),
+            child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                    fixedSize: Size(MediaQuery.of(context).size.width, 60),
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(40))),
+                onPressed: () {},
+                child: Text('Login')),
+          )
         ],
       ),
     ));
