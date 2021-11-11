@@ -77,7 +77,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.all(24.0),
+            padding: const EdgeInsets.fromLTRB(24, 8, 24, 24),
             child: TextFormField(
               decoration: InputDecoration(
                   hintText: '+1 245 42 29 234',
